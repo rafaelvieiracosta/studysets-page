@@ -1,0 +1,20 @@
+{
+  "id": "starter",
+  "nome": "Starter Set",
+  "preco": 1099,
+  "descricao": "Similique quas beatae quidem Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veniam esse impedit, nihil doloremque, quam totam commodi amet blanditiis similique quas beatae quidem, voluptatibus soluta expedita non fuga? Libero, quos.",
+  "estoque": 7,
+  "img": "./api/produtos/starter/starter-foto.jpg",
+  "avaliacoes": [
+    {
+      "nome": "Gustavo",
+      "estrelas": 5,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+    },
+    {
+      "nome": "Priscila",
+      "estrelas": 4,
+      "descricao": "Quam totam commodi amet blanditiis similique quas beatae quidem"
+    }
+  ]
+}

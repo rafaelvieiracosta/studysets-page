@@ -1,0 +1,20 @@
+{
+  "id": "ouro",
+  "nome": "Ouro Plan",
+  "preco": 359,
+  "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veniam esse impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veniam esse impedit, nihil doloremque, quam totam commodi amet blanditiis similique quas beatae quidem, voluptatibus soluta expedita non fuga? Libero, quos.",
+  "estoque": 3,
+  "img": "./api/produtos/ouro/ouro-foto.jpg",
+  "avaliacoes": [
+    {
+      "nome": "Thais",
+      "estrelas": 3,
+      "descricao": "Nihil doloremque lorem ipsum dolor sit amet consectetur adipisicing elit"
+    },
+    {
+      "nome": "Emiliane",
+      "estrelas": 1,
+      "descricao": "Similique quas quam totam commodi amet blanditiis similique quas beatae quidem"
+    }
+  ]
+}

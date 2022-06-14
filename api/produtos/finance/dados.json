@@ -1,0 +1,20 @@
+{
+  "id": "finance",
+  "nome": "Finance Set",
+  "preco": 1999,
+  "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veniam esse impedit, nihil doloremque, quam totam commodi amet blanditiis similique quas beatae quidem, voluptatibus soluta expedita non fuga? Libero, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veniam esse impedit, nihil doloremque, quam totam commodi amet blanditiis similique quas beatae quidem, voluptatibus soluta expedita non fuga? Libero, quos.",
+  "estoque": 6,
+  "img": "./api/produtos/finance/finance-foto.jpg",
+  "avaliacoes": [
+    {
+      "nome": "Leonardo",
+      "estrelas": 2,
+      "descricao": "Libero quos lorem ipsum dolor sit amet consectetur adipisicing elit"
+    },
+    {
+      "nome": "Norma",
+      "estrelas": 4,
+      "descricao": "Amet consectetur uam totam commodi amet blanditiis similique quas beatae quidem"
+    }
+  ]
+}

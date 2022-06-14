@@ -1,0 +1,20 @@
+{
+  "id": "adminer",
+  "nome": "Adminer Set",
+  "preco": 1999,
+  "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veniam esse impedit, nihil doloremque, quam totam commodi amet blanditiis similique quas beatae quidem, voluptatibus soluta expedita non fuga? Libero, quos.",
+  "estoque": 3,
+  "img": "./api/produtos/adminer/adminer-foto.jpg",
+  "avaliacoes": [
+    {
+      "nome": "Fernando",
+      "estrelas": 4,
+      "descricao": "Voluptatibus soluta lorem ipsum dolor sit amet consectetur adipisicing elit"
+    },
+    {
+      "nome": "Sérgio",
+      "estrelas": 3,
+      "descricao": "Non fuga Quam totam commodi amet blanditiis similique quas beatae quidem"
+    }
+  ]
+}

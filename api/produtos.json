@@ -1,0 +1,32 @@
+[
+  {
+    "id": "starter",
+    "nome": "Starter Set",
+    "preco": 1099,
+    "img": "./api/produtos/starter/starter.jpg"
+  },
+  {
+    "id": "adminer",
+    "nome": "Adminer Set",
+    "preco": 1999,
+    "img": "./api/produtos/adminer/adminer.jpg"
+  },
+  {
+    "id": "finance",
+    "nome": "Finance Set",
+    "preco": 1999,
+    "img": "./api/produtos/finance/finance.jpg"
+  },
+  {
+    "id": "prata",
+    "nome": "Prata Plan",
+    "preco": 159,
+    "img": "./api/produtos/prata/prata.jpg"
+  },
+  {
+    "id": "ouro",
+    "nome": "Ouro Plan",
+    "preco": 399,
+    "img": "./api/produtos/ouro/ouro.jpg"
+  }
+]

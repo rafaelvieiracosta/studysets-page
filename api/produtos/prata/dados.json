@@ -1,0 +1,20 @@
+{
+  "id": "prata",
+  "nome": "Prata Plan",
+  "preco": 159,
+  "descricao": "Impedit, nihil doloremque, quam totam commodi amet blanditiis similique quas beatae quidem, voluptatibus soluta expedita non fuga? Libero, quosLorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veniam esse impedit, nihil doloremque, quam totam commodi amet blanditiis similique quas beatae quidem, voluptatibus soluta expedita non fuga? Libero, quos.",
+  "estoque": 3,
+  "img": "./api/produtos/prata/prata-foto.jpg",
+  "avaliacoes": [
+    {
+      "nome": "Josh",
+      "estrelas": 4,
+      "descricao": "Beatae quidem totam commodi amet blanditiis similique quas beatae quidem Lorem ipsum dolor sit amet consectetur adipisicing elit"
+    },
+    {
+      "nome": "Karla",
+      "estrelas": 4,
+      "descricao": "Consectetur adipisicing quam totam commodi amet blanditiis similique quas beatae quidem"
+    }
+  ]
+}
