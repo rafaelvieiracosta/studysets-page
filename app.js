@@ -5,7 +5,8 @@ const vm = new Vue({
     produto: '',
     carrinho: [],
     mensagemAlerta: "Item adicionado",
-    alertaAtivo: false
+    alertaAtivo: false,
+    carrinhoAtivo: false
   },
   filters: {
     numeroPreco(valor){
@@ -49,6 +50,10 @@ const vm = new Vue({
       if(target === currentTarget) 
         this.produto = false
     },
+    clickForaCarrinho({target, currentTarget}){
+      if(target === currentTarget) 
+        this.carrinhoAtivo = false
+    },
     adicionarItem(){
       this.produto.estoque--;
       const {id, nome, preco} = this.produto
@@ -60,6 +65,10 @@ const vm = new Vue({
     },
     checarLocalStorage(){
       if(window.localStorage.carrinho) this.carrinho = JSON.parse(window.localStorage.carrinho)
+    },
+    compararEstoque(){
+      const items = this.carrinho.filter(({id}) => id === this.produto.id)
+      this.produto.estoque -= items.length
     },
     alerta(mensagem){
       this.mensagemAlerta = mensagem
@@ -83,6 +92,7 @@ const vm = new Vue({
       document.title = this.produto.nome || "StudySets"
       const hash = this.produto.id || ""
       history.pushState(null, null, `#${hash}`)
+      if(this.produto) this.compararEstoque()
     }
   },
   created(){
