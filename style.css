@@ -16,15 +16,29 @@ body{
   font-family: 'Noto Serif', serif;
 }
 
+.font_xl{
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+.font_mb{
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+.font_m{
+  font: 400 1.125rem/1.35 "Roboto", sans-serif;
+}
+.font_s{
+  font: 400 1rem/1.5 "Roboto", sans-serif
+}
+
 #app{
   padding: 0 80px;
 }
 
 .header{
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-between;
-  max-width: 900px;
-  padding: 20px 0;
+  padding: 30px 10px;
   margin: 0 auto;
 }
 
@@ -45,8 +59,7 @@ body{
 /* LISTA */
 .produtos{
   max-width: 900px;
-  margin-top: 100px;
-  margin: 100px auto 0 auto;
+  margin: 40px auto;
 }
 
 .produto{
@@ -55,12 +68,14 @@ body{
   margin-bottom: 40px;
   background: #fff;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .produto_img{
   max-width: 300px;
   margin-right: 40px;
+  border-radius: 4px 0 0 4px;
 }
 
 .produto_titulo{
@@ -114,6 +129,7 @@ body{
 .modal_img img{
   max-width: 300px;
   display: block;
+  border-radius: 4px;
 }
 
 @keyframes fadeIn{
@@ -128,13 +144,16 @@ body{
 
 .carrinho_fechar,
 .modal_fechar{
-  border-radius: 50%;
-  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: none;
   width: 40px;
   height: 40px;
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: -15px;
+  right: 15px;
   font-size: 1rem;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -149,20 +168,29 @@ body{
   font-size: 3rem;
 }
 
+.carrinho_finalizar,
 .modal_btn{
   margin-top: 80px;
-  background: #000;
-  cursor: pointer;
-  color: #FFF;
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#18A0FB, #0077C7);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #00234C;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  max-width: max-content;
   border: none;
-  font-size: 1rem;
-  padding: 10px 25px;
-  font-family: "Noto Serif", arial;
+  cursor: pointer;
+}
+
+.modal_btn:hover{
+  background: linear-gradient(#0077C7, #0061A7);
 }
 
 .modal_btn.esgotado{
-  background: #808080;
-
+  background: #363B47;
+  color: #E6EAF0;
 }
 
 .modal_btn:active{
@@ -185,9 +213,6 @@ body{
 .avaliacao_descricao{
   color: rgba(0, 0, 0, .7);
   margin: 20px 0 5px 0;
-}
-.avaliacao_usuario{
-  font-weight: bold;
 }
 
 .alerta{
@@ -219,7 +244,7 @@ body{
   background: #FFF;
   display: inline-block;
   padding: 20px 40px;
-  border: 2px solid #000;
+  border-radius: 4px;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -255,6 +280,7 @@ body{
   padding: 40px;
   max-width: 800px;
   animation: fadeInDown .3s forwards;
+  border-radius: 4px;
 }
 
 .carrinho_item{
@@ -274,6 +300,7 @@ body{
   border: none;
   font-size: 1rem;
   cursor: pointer;
+  background: none;
 }
 
 .carrinho_preco{
@@ -289,34 +316,38 @@ body{
 
 .carrinho_finalizar{
   display: block;
+  margin-top: 0;
   margin-left: auto;
-  background: #000;
-  cursor: pointer;
-  color: #fff;
-  font-size: 1rem;
-  padding: 10px 25px;
-  border: none;
-  font-family: "Noto Serif", arial;
 }
 
 @media(max-width: 900px){
+  body{
+    background: #0B0C12;
+  }
   #app{
     padding: 0 10px;
   }
   .produtos{
-    margin-top: 40px;
+    margin-top: 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .produto{
     flex-direction: column;
     align-items: flex-start;
     max-width: 300px;
-    margin: 30px auto;
+    margin: 0 auto;
+  }
+  .produto_titulo{
+    font-size: 2rem;
   }
   .produto_info{
     padding: 20px;
   }
   .produto_img{
     max-width: 100%;
+    border-radius: 4px 4px 0 0;
   }
   .produto_titulo{
     font-size: 1.rem;
@@ -328,26 +359,43 @@ body{
     gap: 20px;
     background: #FFF;
     padding: 10px 0;
+    margin-top: 20px;
+    max-width: 600px;
   }
   .modal_img{
     grid-row: 2;
+    box-shadow: initial;
   }
   .modal_img img{
     width: 100%;
-    max-width: initial;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
   }
   .modal_dados{
     grid-column: 1;
-    padding: 10px;
+    padding: 20px;
   }
   .avaliacoes{
     grid-column: 1;
-    padding: 10px;
+    padding: 20px;
   }
   .modal_btn{
     margin-top: 20px;
   }
   .carrinho_modal{
     padding: 10px;
+  }
+  .carrinho_menu{
+    color: #FFF;
+  }
+  .carrinho_menu::after{
+    background: url('./assets/carrinhow.svg') no-repeat center center;
+  }
+  @media(max-width: 380px){
+    .header{
+      justify-content: center;
+    }
   }
 }

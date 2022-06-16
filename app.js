@@ -89,7 +89,7 @@ const vm = new Vue({
       window.localStorage.carrinho = JSON.stringify(this.carrinho)
     },
     produto(){
-      document.title = this.produto.nome || "StudySets"
+      document.title = this.produto.nome || "Studysets"
       const hash = this.produto.id || ""
       history.pushState(null, null, `#${hash}`)
       if(this.produto) this.compararEstoque()
